@@ -7,53 +7,52 @@ body {
     Helvetica, Arial, sans-serif;
 }
 
-.header {
-  margin: 0;
-  padding: 12px 16px;
+.nav {
+  padding: 20px 16px;
   background: #555;
   color: #f1f1f1;
   background-color: white;
   border-bottom: 1px solid rgb(221, 221, 221);
-  height: 55px;
+  height: 44px;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
   padding: 16px;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.logo{
+  flex: 1;
 }
 
-.sticky + .content {
-  padding-top: 1px;
+.nav-items {
+  color: #757575;
 }
 
-.flex-container {
+.nav-items .item-list{
   display: flex;
-  color: rgba(46, 62, 72, 0.6);
-  height: 100%;
   align-items: center;
-  justify-content: center;
-}
-
-.flex-items {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-}
-.flex-items > div {
-  padding: 0px 10px;
   font-size: 14px;
+  
 }
 
-.flex-items .log-in {
-  border-left: 1px solid rgb(221, 221, 221);
+.nav-item{
+  list-style: none;
+  padding: 5px 14px;
+  color: #757575;
 }
 
-.flex-items .start-new-group {
-  color: #39919c;
+
+#start-new-group {
+  color: #00A2C7;
   font-weight: bold;
+  border-right: 1px solid rgba(46,62,72,.12);
+}
+
+a{
+  text-decoration: none;
 }
