@@ -25,7 +25,9 @@ body {
 .content {
   padding: 16px;
 }
-.logo{
+.logo {
+  margin: 4px;
+  padding-top: 6px;
   flex: 1;
 }
 
@@ -33,26 +35,55 @@ body {
   color: #757575;
 }
 
-.nav-items .item-list{
+.nav-items .item-list {
   display: flex;
   align-items: center;
   font-size: 14px;
-  
 }
 
-.nav-item{
+.nav-item {
   list-style: none;
   padding: 5px 14px;
-  color: #757575;
 }
-
 
 #start-new-group {
-  color: #00A2C7;
-  font-weight: bold;
-  border-right: 1px solid rgba(46,62,72,.12);
+  border-right: 1px solid rgba(46, 62, 72, 0.12);
 }
 
-a{
+.nav-item-link {
+  color: #757575;
   text-decoration: none;
+}
+
+.start-new-group-link {
+  color: #00a2c7;
+  font-weight: bold;
+}
+
+.content {
+  padding: 0;
+}
+
+.video-container {
+  min-height: 460px;
+  width: 100%;
+  position: relative;
+}
+
+/* .overlay{
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
+.intro-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: 0;
 }
