@@ -12,42 +12,67 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="nav" id="nav">
-      <div class="logo">
-        <a class="logo-link" href="">
-          <img
-            src="https://learn-a-skill.dev.meetuphq.io/static/media/logo--script.fb630930.svg"
-            alt="meetup-logo"
-            style="height: 44px;"
-          />
-        </a>
+    <div class="home-container">
+      <div class="nav" id="nav">
+        <div class="logo">
+          <a class="logo-link" href="">
+            <img
+              src="https://learn-a-skill.dev.meetuphq.io/static/media/logo--script.fb630930.svg"
+              alt="meetup-logo"
+              style="height: 44px;"
+            />
+          </a>
+        </div>
+        <div class="nav-items">
+          <ul class="item-list">
+            <li class="nav-item" id="start-new-group">
+              <a class="start-new-group-link nav-item-link" href=""
+                >Start a new group</a
+              >
+            </li>
+            <li class="nav-item" id="log-in">
+              <a class="log-in-link nav-item-link" href="">Log in</a>
+            </li>
+            <li class="nav-item" id="sign-up">
+              <a class="sign-up-link nav-item-link" href="">Sign up</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="nav-items">
-        <ul class="item-list">
-          <li class="nav-item" id="start-new-group">
-            <a class="start-new-group-link nav-item-link" href=""
-              >Start a new group</a
-            >
-          </li>
-          <li class="nav-item" id="log-in">
-            <a class="log-in-link nav-item-link" href="">Log in</a>
-          </li>
-          <li class="nav-item" id="sign-up">
-            <a class="sign-up-link nav-item-link" href="">Sign up</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="content">
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/i1IKnWDecwA?controls=0&autoplay=1&mute=1"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          class="intro-video"
-        ></iframe>
-        <div class="overlay"></div>
+      <div class="content">
+        <div class="video-container">
+          <video
+            src="./intro.mp4"
+            autoplay
+            loop
+            muted
+            class="intro-video"
+          ></video>
+        </div>
+        <div class="text-container">
+          <section class="section">
+            <div class="flex-container">
+              <div class="flex-item main-title">
+                <h1 class="title-text">
+                  <span>The real world is calling</span>
+                </h1>
+              </div>
+              <div class="flex-item">
+                <p>
+                  <span
+                    >Join a local group to meet people, try something new, or do
+                    more of what you love.</span
+                  >
+                </p>
+              </div>
+              <div class="flex-item button button-cover">
+                <button class="sign-in-button">
+                  <span>Join Meetup</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </body>

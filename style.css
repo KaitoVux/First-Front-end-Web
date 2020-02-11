@@ -6,7 +6,10 @@ body {
   font-family: Graphik Meetup, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica, Arial, sans-serif;
 }
-
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
 .nav {
   padding: 20px 16px;
   background: #555;
@@ -62,28 +65,71 @@ body {
 
 .content {
   padding: 0;
+  position: relative;
+  height: 460px;
+  width: 100%;
 }
 
 .video-container {
-  min-height: 460px;
-  width: 100%;
-  position: relative;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
-/* .overlay{
-  position: absolute;
-  top: 0; 
-  bottom: 0;
-  left: 0;
-  right: 0;
-} */
 
 .intro-video {
   position: absolute;
   top: 0;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container {
+  position: absolute;
+  top:0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  z-index: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  color: #f64060;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.title-text {
+  margin: 0;
+  font-size: 42px;
+}
+
+
+
+.sign-in-button {
+  background-color: #f64060;
+  color: white;
+  width: 320px;
+  height: 50px;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button-cover {
+  padding-top: 14px;
+}
+
+.sign-in-button:hover{
+  background-color: #E81035;
+}
+
+.sign-in-button:active {
+  border: none;
 }
