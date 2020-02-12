@@ -42,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 14px;
+  padding-left: 32px;
 }
 
 .nav-item {
@@ -132,4 +133,41 @@ body {
 
 .sign-in-button:active {
   border: none;
+}
+
+/* catelories list */
+.categories {
+  width: 100%;
+  height: 76px;
+  display: flex;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  border-top: 1px solid rgb(221, 221, 221);
+}
+
+.category-list {
+  padding:  0px 150px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.category-item {
+  background-color: rgb(246,247,248);
+  list-style: none;
+  height: 25px;
+  border: 1px solid #C5C4C4;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+.category-item a{
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 550;
+
+}
+
+.category-item:hover {
+  border: 1px solid rgb(162,162,162);
 }
